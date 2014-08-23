@@ -12,7 +12,7 @@ class Extension extends \Bolt\BaseExtension
             $this->app['twig.loader.filesystem']->prependPath(__DIR__."/twig");
         }
         $this->addCss('assets/styling.css');
-        $this->addJavascript('assets/styling.css');
+        $this->addJavascript('assets/test.js');
     }
 
     public function getName()

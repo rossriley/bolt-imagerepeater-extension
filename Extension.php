@@ -11,6 +11,7 @@ class Extension extends \Bolt\BaseExtension
         if ($this->app['config']->getWhichEnd()=='backend') {
             $this->app['twig.loader.filesystem']->prependPath(__DIR__."/twig");
         }
+        $this->addCss('assets/styling.css');
     }
 
     public function getName()
